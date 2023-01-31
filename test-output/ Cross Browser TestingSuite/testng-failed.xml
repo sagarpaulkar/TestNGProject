@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [ Cross Browser TestingSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="ParameterizationCrossBrowserPractice.AllBrowser">
+        <methods>
+          <include name="VerifyCurrentUrl"/>
+          <include name="ClickLoginBtn"/>
+          <include name="VerifyPageTitle"/>
+          <include name="VerifyUsernameField"/>
+          <include name="VerifyPasswordField"/>
+          <include name="CrossBrowserTesting" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ParameterizationCrossBrowserPractice.AllBrowser -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [ Cross Browser TestingSuite] -->
